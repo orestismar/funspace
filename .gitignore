@@ -130,3 +130,5 @@ dmypy.json
 
 # Project specific files
 vcs.xml
+/Python/betting/basketball/data/*
+
