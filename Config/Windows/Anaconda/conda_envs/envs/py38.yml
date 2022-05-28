@@ -1,0 +1,32 @@
+name: py38
+channels:
+  - conda-forge
+  - anaconda
+  - defaults
+dependencies:
+  - flask
+  - ipykernel
+  - keyring
+  - lxml
+  - matplotlib
+  - mypy
+  - numba
+  - openpyxl
+  - pandas
+  - paramiko
+  - plotly
+  - pylint
+  - pymongo
+  - pytest
+  - pytest-cov
+  - pytest-mock
+  - python=3.8
+  - qgrid
+  - requests
+  - scikit-learn
+  - scipy
+  - scrapy
+  - selenium
+  - sqlalchemy
+  - statsmodels
+  - trading-calendars
