@@ -1,0 +1,18 @@
+# Default .condarc file
+
+# Just use the standard channels
+channels:
+  - conda-forge
+  - anaconda
+  - defaults
+
+# Want to use ssl_verification.
+ssl_verify: true
+
+# Set the envs and pkgs_dir to match (regardless of Anaconda/Miniconda/Install For All / Install for Just me installation)
+envs_dirs:
+  - C:\Anaconda3\envs
+pkgs_dirs:
+  - C:\Anaconda3\pkgs
+
+# See https://conda.io/docs/config.html for more information about this file.
