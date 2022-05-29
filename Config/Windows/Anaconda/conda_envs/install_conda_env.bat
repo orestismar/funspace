@@ -25,11 +25,11 @@ ECHO Incorrect input & GOTO YES_PROMPT
 
 :YES
 ECHO;
-IF %FE_PATH% == "" GOTO NO_CODE_ENV_VARS_SET
+IF %FS_PATH% == "" GOTO NO_CODE_ENV_VARS_SET
 GOTO GET_ENV_NAME
 
 :GET_ENV_NAME
-SET TEMPLATE_DIR=%FE_PATH%\Config\Windows\Anaconda\conda_envs\envs
+SET TEMPLATE_DIR=%FS_PATH%\Config\Windows\Anaconda\conda_envs\envs
 ECHO Available templates:
 CALL DIR /B %TEMPLATE_DIR%\*yml /A-D
 ECHO;
@@ -84,7 +84,7 @@ SETLOCAL DisableDelayedExpansion
 ECHO;
 ECHO Adding the FinancialEngineering Python folder to %ENV_NAME%
 ECHO;
-CALL conda develop %FE_PATH%\Python -n %ENV_NAME%
+CALL conda develop %FS_PATH%\Python -n %ENV_NAME%
 
 ECHO;
 ECHO This script no longer attempts to update all modules after install
@@ -113,7 +113,7 @@ GOTO END
 :NO_CODE_ENV_VARS_SET
 ECHO;
 ECHO Unable to complete, this requires a
-ECHO FE_PATH environment variable (yours %FE_PATH%).
+ECHO FS_PATH environment variable (yours %FS_PATH%).
 ECHO see fe_envs.bat
 GOTO END
 
