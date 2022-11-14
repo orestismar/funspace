@@ -23,6 +23,7 @@ dependencies:
   - python=3.8
   - qgrid
   - requests
+  - requests-oauthlib
   - scikit-learn
   - scipy
   - scrapy
