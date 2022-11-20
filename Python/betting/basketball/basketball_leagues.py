@@ -89,4 +89,6 @@ class BasketballTeam(Team, ABC):
     def average_total_scoring_vs_higher_rank(self, national_league: bool):
         """ Average of full time points scored against medium ranked teams """
 
+    def average_possessions_per_game(self):
+        raise NotImplementedError
     pass
